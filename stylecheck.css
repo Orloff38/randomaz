@@ -1,0 +1,266 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@300;400;700&display=swap');
+
+body{
+  
+    background-image: url(wallpaper.jpg);
+    background-size:cover;
+    background-position: center;
+    outline: none;
+
+
+}
+
+.all{
+    height: 100vh;
+}
+
+.container{
+    font-family: 'Paytone One', sans-serif;
+    min-height: 400px;
+    max-width: 450px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #035b98;
+    position: absolute;               /* 2 */
+   top: 50%;    
+   left: 50%;                     /* 3 */
+   transform: translate(-50%, -50%);
+   box-shadow: 5px -5px 5px #121313;
+    
+}
+
+.val{
+    max-width: 320px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    margin: 10px;
+}
+
+input[type=checkbox]{
+
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.number__val{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.number__val label{
+display: flex;
+justify-content: space-between;
+flex-basis:  100%;
+}
+
+
+
+
+
+#pass__length{
+    width: 210px;
+   appearance: none;
+   height: 4px;
+   border-radius: 2px;
+   background-color: #b7d5bf;
+   position: relative;
+   top: 9px;
+}
+
+
+#pass__length::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+   border-radius: 100%;
+   background-color: #121313;
+   cursor: pointer;
+}
+
+#pass__length::-webkit-slider-thumb:active {
+transform: scale(1.2);
+}
+
+
+
+
+.number__length{
+    font-weight: 400;
+    color: #19824a;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.number__length span{
+width:  60px;
+text-align: center;
+}
+
+.head{
+    position: relative;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #035b98;
+    width: 100%;
+    font-size: 16px;
+font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  letter-spacing: 2px;
+    
+}
+
+.number{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    background-color: #dddee2;
+    color: #121313;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding-bottom: 5px;
+
+
+}
+
+.buttons{
+    font-family: 'Paytone One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+margin-top: 30px;
+    font-weight: 400;
+
+}
+
+input[type=button]{
+ height: 40px;
+
+}
+
+.switch{
+    cursor: pointer;
+	width: 36px;
+	height: 20px;	
+	border-radius: 20px;	
+	background: #dddee2;
+	transition: .2s;
+}
+
+.switch::before{
+    content: "";
+    display: inline-block;	
+	width: 20px;
+	height: 20px;	
+	border-radius: 100%;
+	position: relative;
+	top: 0px;			
+	background: #101114;
+	transition: .2s;
+}
+
+input:checked ~ .switch{
+  
+	width: 36px;
+	height: 20px;	
+	border-radius: 20px;		
+	background: #19824a;
+	transition: .2s;
+}
+
+input:checked ~ .switch::before{
+    transform: translateX(16px);
+	transition: .2s;
+}
+
+#generate, #copy{
+    font-family: 'Paytone One', sans-serif;
+    cursor: pointer;
+    background-color: #035b98;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#generate:hover, #copy:hover{
+    background-color: #6780db;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#generate:hover, #copy:hover{
+    background-color: #6780db;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+
+#copy{
+    width: 40px;
+    background-image: url(copyicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#generate{
+    font-size: 24px;
+    width: 220px;
+    padding-bottom: 3px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 450px){
+    body{
+        background-image: none;
+    }
+.all{
+    width: 100%;
+    min-height: 500px;
+
+}
+    .container{
+
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #ffffff;
+color: #035b98;           /* 2 */                   /* 3 */
+box-shadow: 5px -5px 5px #121313;
+}
+.inner{
+    position: relative;
+    top:20%;
+}
+
+}

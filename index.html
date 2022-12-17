@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylecheck.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Vollkorn+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Generator</title>
+</head>
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="head">
+                <span>Password Generator</span>
+            </div>
+            <div class="inner">
+                <div class="number">
+                    <span id="pass"></span>
+                </div>
+                <div class="val">
+                    <div class="number__length">
+                        <span class="length__text">4</span>
+                        <input readonly type="range"  step="1" min="4" max="16" value="4" id="pass__length">
+                    </div>
+                    <div class="number__val">
+                        <label for="upCase">Include Uppercase
+                            <input type="checkbox" id="upCase" class="upCase" checked="checked">
+                            <span class="switch"></span>
+                        </label>
+                        
+                    </div>
+                    <div class="number__val">
+                        <label for="lowCase">Include Lowercase
+                            <input type="checkbox" id="lowCase" class="lowCase" checked="checked">
+                            <span class="switch"></span>
+                        </label>
+        
+                    </div>
+                    <div class="number__val">
+                        <label for="numb">Include Numbers
+                            <input type="checkbox" id="numb" class="numb" checked="checked">
+                            <span class="switch"></span>
+                        </label>
+        
+                    </div>
+                    <div class="number__val">
+                        <label for="symb">Include Symbols
+                            <input type="checkbox" id="symb" class="symb" checked="checked">
+                            <span class="switch"></span>
+                        </label>
+        
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="generate" value="generate">
+                        <input type="button" id="copy" value="">
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+        </div>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
